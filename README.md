@@ -7,3 +7,7 @@
 #### Image:
 
 <img src="https://i.imgur.com/PGXznmo.jpeg" width="200">
+
+#### Avatar:
+
+<img src="https://i.imgur.com/uOggf85.png" width="75">
