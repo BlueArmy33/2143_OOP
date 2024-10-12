@@ -1,6 +1,6 @@
-#Class Design
+# Class Design
 
-##Dice Class:
+## Dice Class:
 ###Data: 
 ####sides
 ####current_value
