@@ -1,4 +1,4 @@
 # Ncurses Test
 
 #### Proof:
-<img src="https://imgur.com/QnHhwvo" width="200">
+<img src="https://i.imgur.com/QnHhwvo.png" width="200">
