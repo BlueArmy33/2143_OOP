@@ -135,7 +135,20 @@
 #####  std::cout << "Data: " << obj.data << std::endl; // Access private member
 ##### }
 
- Generics and Templates
+### Generics and Templates
+#### Definition: 
+##### A way to write code that can work with different data types without needing to rewrite the code for each type. Templates in C++ use the template keyword.
+#### Example: 
+##### template <typename T>
+##### T add(T a, T b) {
+#####  return a + b;
+##### }
+
+##### int main() {
+#####  int x = add<int>(5, 3); // Using template with int
+#####  double y = add<double>(2.5, 1.7); // Using template with double
+#####  std::cout << x << " " << y << std::endl; 
+##### }
  
 ### Inheritance
 #### Definition: 
@@ -184,8 +197,25 @@
  #### Example: 
  ##### In the Dog class, bark() is a method that defines the action of the dog barking.
  
- Multiple Inheritance
- Multithreading in OOP (time permitting)
+ ### Multiple Inheritance
+ #### Definition: 
+ ##### A class can inherit from multiple base classes. Can lead to the "Diamond Problem" (ambiguity when inheriting from two classes that share a common ancestor). Multithreading in OOP (time permitting
+ #### Example:
+ ##### class A { 
+##### public:
+#####  void A_func() { /* ... */ }
+##### };
+
+##### class B {
+##### public:
+ ##### void B_func() { /* ... */ }
+##### };
+
+##### class C : public A, public B { // Inherits from both A and B
+##### public:
+#####  void C_func() { /* ... */ }
+##### };
+
 ### Object Relationships (Association, Aggregation, Composition)
 #### Definition: 
 ##### Describe how objects interact and relate to each other. Common types include association, aggregation, and composition.
@@ -195,7 +225,14 @@
 ##### 1. A University class may have an aggregation relationship with Student objects. The university owns the student records, but the student can exist independently.
 ##### 2. A Customer class may have an association with an Order class, where one customer can place many orders.
 
- Object-Oriented Design Principles
+ ### Object-Oriented Design Principles
+ #### Definition:
+ ##### Single Responsibility Principle: Each class should have only one specific responsibility.
+##### Open/Closed Principle: Classes should be open for extension but closed for modification.
+##### Liskov Substitution Principle: Objects of a subclass should be substitutable for objects of their parent class without altering the correctness of the program.
+##### Interface Segregation Principle: Clients should not be forced to depend on interfaces they don't use.
+##### Dependency Inversion Principle: High-level modules should not depend on low-level modules. Both should depend on1 abstractions.
+
  ### Operator Overloading
  #### Definition: 
  ##### Redefining the behavior of operators (e.g., +, -, *, ==) for user-defined classes.
@@ -207,7 +244,12 @@
 #####  }
 ##### };
 
- Overloading
+### Overloading
+#### Definition: 
+##### Having multiple methods or functions with the same name but different parameter lists.
+#### Example: 
+##### See the add() function in the Generics and Templates example.
+
  ### Polymorphism
  #### Definition: 
  ##### The ability of an object to take on many forms. 
@@ -220,8 +262,12 @@
 ##### public:
 #####  void makeSound() override { std::cout << "Woof!" << std::endl; }
 ##### };
- Public / Private / Protected
- SOLID Principles
+ ### Public / Private / Protected
+ #### Definition:
+ ##### Access modifiers that control the visibility of class members.
+ 
+ ### SOLID Principles
+ #### 
  ### Static (Methods and Variables)
  #### Definition: 
  ##### Static Method: A method that belongs to the class itself, not to any specific object. Accessed using the class name.
