@@ -267,7 +267,9 @@
  ##### Access modifiers that control the visibility of class members.
  
  ### SOLID Principles
- #### 
+ #### Definition:
+ ##### Explained in Object Oriented Design Principles
+ 
  ### Static (Methods and Variables)
  #### Definition: 
  ##### Static Method: A method that belongs to the class itself, not to any specific object. Accessed using the class name.
@@ -275,6 +277,27 @@
 #### Example: 
 ##### See the Counter class example above.
 
- Testing in OOP (Unit Testing, Test-Driven Development)
- UML Diagrams and Modeling
- Virtual
+### Testing in OOP (Unit Testing, Test-Driven Development)
+#### Definition: 
+##### Unit Testing: Testing individual components (e.g., classes, methods) in isolation.
+##### Test-Driven Development (TDD): A development process where tests are written before the actual code is implemented.
+#### Example:
+##### #include <gtest/gtest.h> 
+##### TEST(CalculatorTest, Add) {
+#####  Calculator calc;
+#####  EXPECT_EQ(calc.add(2, 3), 5); 
+##### }
+
+### UML Diagrams and Modeling
+#### Definition:
+##### A visual language for specifying, constructing, and documenting the artifacts of a software-intensive system.
+#### Example: 
+##### Class diagrams: Show classes, their attributes, methods, and relationships.
+##### Use Case diagrams: Describe the interactions between users and the system.
+##### Sequence diagrams: Illustrate the sequence of messages exchanged between objects.
+
+### Virtual
+#### Definition: 
+##### Used with methods to allow them to be overridden in derived classes. Enables polymorphism.
+#### Example: 
+##### See the Shape and Circle example above.
